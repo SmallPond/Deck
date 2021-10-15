@@ -50,10 +50,11 @@ do{\
         IMPORT_IMG(time_info);
         IMPORT_IMG(trip);
 
-        IMPORT_IMG(arm);
+        // IMPORT_IMG(arm);
         IMPORT_IMG(bluetooth);
         IMPORT_IMG(pose6d);
         IMPORT_IMG(joints);
+        IMPORT_IMG(xman);
     }
 
 } /* extern "C" */

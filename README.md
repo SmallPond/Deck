@@ -5,13 +5,15 @@
 
 故忍不住自己来跑一跑学习一下 LVGL（久闻盛名），并且之后将基于此构建自己的小玩具。
 
+修改：
+- 更新了启动界面和显示图片
 
-- 硬件
-  - esp32doit-devkit-v1 开发板
-  - 中景园1.3寸 IPS 屏（240*240）
 
-硬件连线：
+# 硬件
 
+- esp32doit-devkit-v1 开发板
+- 中景园1.3寸 IPS 屏（240*240）
+- 硬件连线：
 |ESP32|屏幕|
 |:-:|:-:|
 |GPIO_23(MOSI)|SDA|
@@ -20,7 +22,15 @@
 |GPIO_4(RST)|RES|
 |GPIO_12(BLK)|BLK|
 
+以下仅为个人的学习记录。
 # LVGL
+## 图片
+
+基于已有框架增添自己的图片：
+
+- 图片生成C代码网站：[Online Image Converter BMP, JPG or PNG to C array or binary](https://lvgl.io/tools/imageconverter),选择 True color with alpha
+- 将生成的C文件保存到`src\App\Resources\Image\`目录下
+- 在 `src\App\Resources\ResourcePool.cpp` 增加一行声明
 
 ## 动画
 
