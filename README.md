@@ -7,23 +7,33 @@
 
 修改：
 - 更新了启动界面和显示图片
+- 使用 3 个按键实现了 encoder 的逻辑
 
 
 # 硬件
 
 - esp32doit-devkit-v1 开发板
 - 中景园1.3寸 IPS 屏（240*240）
-- 硬件连线：
+## 硬件连线：
 |ESP32|屏幕|
 |:-:|:-:|
 |GPIO_23(MOSI)|SDA|
 |GPIO_18(SCLK)|SCL|
 |GPIO_2(DC)|DC|
 |GPIO_4(RST)|RES|
-|GPIO_12(BLK)|BLK|
+|GPIO_15(BLK)|BLK|
+
+- Encoder->按键
+  - ENTER -> GPIO_12
+  - LEFT  -> GPIO_33
+  - RIGHT -> GPIO_25 
+
+GPIO(13 14 26)暂时不清楚和哪里冲突了，无法正常作为按键输入（始终为按下状态（低电平））
+
+# LVGL
 
 以下仅为个人的学习记录。
-# LVGL
+
 ## 图片
 
 基于已有框架增添自己的图片：

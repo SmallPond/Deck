@@ -71,7 +71,8 @@ void ButtonEvent::EventAttach(FuncCallback_t function)
 }
 
 /**
-  * @brief  监控事件，建议扫描周期10ms
+  * @brief  监控事件，建议扫描周期10ms （10ms 扫描一次相当于消抖了）
+  *         检查长按、双击等操作
   * @param  nowState: 当前按键状态
   * @retval 无
   */

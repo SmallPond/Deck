@@ -60,6 +60,8 @@ namespace HAL
     void Encoder_Update();
     int16_t Encoder_GetDiff();
     bool Encoder_GetIsPush();
+    bool Encoder_NextIsPush();
+    bool Encoder_PrevIsPush();
     void Encoder_SetEnable(bool en);
 
 /* Audio */

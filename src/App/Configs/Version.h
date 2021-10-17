@@ -27,7 +27,7 @@
 #define VERSION_FIRMWARE_NAME   "[littleVisual]"
 #define VERSION_SOFTWARE        "v1.0"
 #define VERSION_HARDWARE        "v1.1"
-#define VERSION_AUTHOR_NAME     "PZH"
+#define VERSION_AUTHOR_NAME     "DB"
 
 /* Number to string macro */
 #define _VERSION_NUM_TO_STR_(n)  #n

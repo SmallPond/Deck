@@ -44,7 +44,7 @@
 #define TFT_CS    -1 // Not connected
 #define TFT_DC    2
 #define TFT_RST   4  // Connect reset to ensure display initialises
-#define CONFIG_SCREEN_BLK_PIN       12
+#define CONFIG_SCREEN_BLK_PIN       15
 
 #define CONFIG_SCREEN_HOR_RES       240
 #define CONFIG_SCREEN_VER_RES       240
@@ -55,7 +55,7 @@
 #define CONFIG_BAT_CHG_DET_PIN      38
 
 /* Buzzer */
-#define CONFIG_BUZZ_PIN             25
+#define CONFIG_BUZZ_PIN             27
 #define CONFIG_BUZZ_CHANNEL         2
 #define CONFIG_SOUND_ENABLE_DEFAULT false
 
@@ -64,13 +64,13 @@
 #define CONFIG_IMU_INT2_PIN         33
 
 /* I2C */
-#define CONFIG_MCU_SDA_PIN          32
-#define CONFIG_MCU_SCL_PIN          33
+#define CONFIG_MCU_SDA_PIN          -1
+#define CONFIG_MCU_SCL_PIN          -1
 
 /* Encoder */
-#define CONFIG_ENCODER_B_PIN        34
-#define CONFIG_ENCODER_A_PIN        35
-#define CONFIG_ENCODER_PUSH_PIN     27
+#define CONFIG_ENCODER_B_PIN        33 //34  Prev 
+#define CONFIG_ENCODER_A_PIN        25 //35  Next
+#define CONFIG_ENCODER_PUSH_PIN     12 // 27
 
 /* Power */
 #define CONFIG_POWER_EN_PIN         21
@@ -81,10 +81,10 @@
 /* SD CARD */
 #define CONFIG_SD_SPI               SPI_SD
 #define CONFIG_SD_CD_PIN            -1
-#define CONFIG_SD_MOSI_PIN          PB15
-#define CONFIG_SD_MISO_PIN          PB14
-#define CONFIG_SD_SCK_PIN           PB13
-#define CONFIG_SD_CS_PIN            15
+#define CONFIG_SD_MOSI_PIN          -1
+#define CONFIG_SD_MISO_PIN          -1 // PB14
+#define CONFIG_SD_SCK_PIN           -1 // PB13
+#define CONFIG_SD_CS_PIN            -1
 #define CONFIG_SD_DET_PIN           22
 
 /* Stack Info */
