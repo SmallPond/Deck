@@ -1,5 +1,5 @@
 # 简介
-![Deck](https://www.dingmos.com/usr/uploads/2021/11/deck.png)
+![Deck](https://www.dingmos.com/usr/uploads/2021/11/428669822.png)
 
 基于 [稚晖君的Peak](https://github.com/peng-zhihui/Peak)，其使用了 FASTSHIFT 的码表 [X-TRACK](https://github.com/FASTSHIFT/X-TRACK)的丝滑 UI （IOS ViewController）并移植到了 ESP32 （修改部分库实现了 60 fps 纵享丝滑）上。
 
